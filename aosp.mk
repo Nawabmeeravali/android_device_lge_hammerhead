@@ -3,8 +3,8 @@ TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080
 TARGET_BOOTANIMATION_HALF_RES := true
 
-# Inherit some common aex stuff.
-$(call inherit-product, vendor/aosp/common.mk)
+# Inherit some common Pixel stuff.
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 
 # Inherit device configuration
