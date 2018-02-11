@@ -16,10 +16,16 @@
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
-# Inherit from our custom product configuration
-$(call inherit-product, vendor/aosp/common.mk)
+# Inherit some common AOSMP stuff.
+TARGET_ARCH := arm
+TARGET_DENSITY := xxhdpi
+TARGET_BOOT_ANIMATION_RES := 1080
+PRODUCT_COPY_FILES += vendor/aosmp/prebuilt/common/media/AOSMP-1080.zip:system/media/bootanimation.zip
 
-PRODUCT_NAME := aosp_hammerhead
+# Inherit some common AOSMP stuff.
+$(call inherit-product, vendor/aosmp/config/common_full_phone.mk)
+
+PRODUCT_NAME := aosmp_hammerhead
 PRODUCT_DEVICE := hammerhead
 PRODUCT_BRAND := lge
 PRODUCT_MODEL := Nexus 5
