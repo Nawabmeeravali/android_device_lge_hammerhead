@@ -26,6 +26,9 @@ PRODUCT_MODEL := Nexus 5
 PRODUCT_MANUFACTURER := LGE
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
+# AospExtended-BuildType
+EXTENDED_BUILD_TYPE := OFFICIAL
+
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=hammerhead \
     BUILD_FINGERPRINT=google/hammerhead/hammerhead:6.0.1/M4B30Z/3437181:user/release-keys \
@@ -33,6 +36,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 $(call inherit-product, device/lge/hammerhead/device.mk)
 $(call inherit-product-if-exists, vendor/lge/hammerhead/device-vendor.mk)
+TARGET_BOOT_ANIMATION_RES := 1080
 
 #$(call inherit-product, device/lge/hammerhead/full_hammerhead.mk)
 
