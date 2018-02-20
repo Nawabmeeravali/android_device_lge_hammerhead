@@ -26,6 +26,8 @@ on init
     mkdir /persist 0771 system system
     mkdir /firmware 0771 system system
 
+    libboringssl-compat.so:/system/lib/libfacenet.so|libprotobuf-cpp-haxx.so
+
     symlink /sdcard /storage/sdcard0
 
 on fs
