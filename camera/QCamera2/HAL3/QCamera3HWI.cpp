@@ -1952,7 +1952,9 @@ int QCamera3HardwareInterface::flush()
     for (List<stream_info_t *>::iterator it = mStreamInfo.begin();
         it != mStreamInfo.end(); it++) {
         QCamera3Channel *channel = (QCamera3Channel *)(*it)->stream->priv;
-        channel->stop();
+        if (channel != nullptr) {
+            channel->stop();
+        }
         (*it)->status = INVALID;
     }
 
