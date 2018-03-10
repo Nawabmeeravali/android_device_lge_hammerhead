@@ -310,7 +310,6 @@
     <bool name="config_eap_sim_based_auth_supported">false</bool>
 
 <<<<<<< HEAD
-<<<<<<< HEAD
 
     <!-- enable doze powersaving mode -->
     <bool name="config_enableAutoPowerModes">true</bool>
@@ -350,8 +349,6 @@
          config to 7. -->
     <integer name="config_deviceHardwareWakeKeys">64</integer>
 
-=======
->>>>>>> 27a02b9... hammerhead: overlay: Introduce LineageSDK and move hardware keys from overlay
 =======
 >>>>>>> 27a02b9... hammerhead: overlay: Introduce LineageSDK and move hardware keys from overlay
     <!-- Doze mode -->
