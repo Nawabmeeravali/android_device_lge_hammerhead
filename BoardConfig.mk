@@ -31,8 +31,6 @@ BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02900000 --tags_offset 0x02700000
 
 TOUCH_BOOST_DEBUG := false
 
-TARGET_USES_LEGACY_ADB_INTERFACE := true
-
 # Binder API version
 TARGET_USES_64_BIT_BINDER := true
 
