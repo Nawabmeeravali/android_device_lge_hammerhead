@@ -467,6 +467,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.telephony.call_ring.delay=0 \
     ring.delay=0
 
+# Option
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.vendor.qti.sys.fw.bg_apps_limit=24
+
 $(call inherit-product-if-exists, hardware/qcom/msm8x74/msm8x74.mk)
 $(call inherit-product-if-exists, vendor/qcom/gpu/msm8x74/msm8x74-gpu-vendor.mk)
 $(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/firmware/bcm4339/device-bcm.mk)
