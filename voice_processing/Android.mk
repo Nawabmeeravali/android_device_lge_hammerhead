@@ -26,7 +26,7 @@ LOCAL_C_INCLUDES += \
 
 LOCAL_MODULE := libqcomvoiceprocessingdescriptors
 
-LOCAL_MODULE_PATH := $(TARGET_OUT_SHARED_LIBRARIES)/soundfx
+LOCAL_MODULE_PATH := vendor/lib/soundfx
 
 LOCAL_MODULE_TAGS := optional
 
