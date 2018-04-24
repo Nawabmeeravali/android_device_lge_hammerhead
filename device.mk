@@ -136,7 +136,6 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@2.0-impl \
     gralloc.msm8974 \
     libgenlock \
-    android.hardware.graphics.composer@2.1-impl \
     hwcomposer.msm8974 \
     android.hardware.memtrack@1.0-impl \
     memtrack.msm8974 \
