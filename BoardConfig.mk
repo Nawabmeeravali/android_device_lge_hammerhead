@@ -132,4 +132,12 @@ TARGET_NEEDS_PLATFORM_TEXT_RELOCATIONS:= true
 # Enable workaround for slow rom flash
 BOARD_SUPPRESS_SECURE_ERASE := true
 
+# Snapdragon LLVM 4.0 
+ifneq ($(HOST_OS),darwin)
+SDCLANG := true
+SDCLANG_PATH := prebuilts/snapdragon-llvm/toolchains/llvm-Snapdragon_LLVM_for_Android_4.0/prebuilt/linux-x86_64/bin
+SDCLANG_LTO_DEFS := device/qcom/common/sdllvm-lto-defs.mk
+endif
+
+
 -include vendor/lge/hammerhead/BoardConfigVendor.mk
